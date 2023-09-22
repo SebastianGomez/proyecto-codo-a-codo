@@ -58,6 +58,7 @@ main a{
 .fluid-container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .fichas{
@@ -75,6 +76,31 @@ main a{
 }
 .img-fichas img{
     width: 100%;
+}
+.producto{
+    width: 30%;
+    margin: 1em;
+    text-align: center;
+    border:1px solid lightgray;
+    padding: 1em;
+}
+.producto img{
+    width: 100%;
+    height: 300px;
+}
+.btn{
+    margin:1em;
+}
+.btn a{
+    width: 300px;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+.btn a:hover{
+    background-color: rgb(139, 0, 72);
 }
 h1, h2{
     text-align: center;
@@ -167,9 +193,25 @@ input[type=checkbox] {
     margin-right: 38%;
     margin-left: 2px;  
 }
-@media (max-width: 768px) {
+@media (max-width:980){
+    main{
+        width: 100%;
+    }
+        .producto, .fichas{
+         width: 50%;
+         padding: 1em;
+         margin: 0.4em;
+     }
+     .producto img{
+        height: auto;
+     }
+    }
+@media (max-width:768px) {
     body {
       font-size: 1em;
+        }
+        main{
+            width: 100%;
         }
      .fluid-container{
           flex-direction: column;
@@ -183,9 +225,10 @@ input[type=checkbox] {
         margin-top: 0;
         font-size: 200%;
     }
-    .fichas, .form{
-        width: 100%;
-        margin: 0;
+    .fichas, .producto, .form{
+        width: 90%;
+        margin:0.5em;
+        padding: 1em;
     }
     header nav li{
             display: block;
