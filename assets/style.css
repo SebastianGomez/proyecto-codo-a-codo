@@ -206,25 +206,33 @@ h1{
   75%  {background-color:rgb(128, 100, 0); left:0px; top:200px;}
   100% {background-color:rgb(255, 140, 0); left:0px; top:0px;}
 }
-@media (max-width:980){
+@media (max-width:1024){
     main{
         width: 100%;
+        margin:0;
+        padding:0;
+    }
+    .fluid-container{
+        width: 100%;
+        padding: 0;
     }
         .producto, .fichas{
          width: 50%;
-         padding: 1em;
-         margin: 0.4em;
+         padding: 0.4em;
+         margin: 0.2em;
      }
      .producto img{
-        height: auto;
+        width: 100%;
+        height: 30vh;
      }
     }
-@media (max-width:768px) {
+@media (max-width:600px) {
     body {
       font-size: 1em;
         }
         main{
             width: 100%;
+            padding: 0;
         }
      .fluid-container{
           flex-direction: column;
