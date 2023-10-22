@@ -199,6 +199,14 @@ h1{
   animation-direction: alternate-reverse;  
 }
 
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
+}
+
 @keyframes animacion1 {
   0%   {background-color:rgb(255, 230, 0); left:0px; top:0px;}
   25%  {background-color:rgb(0, 234, 255); left:200px; top:0px;}

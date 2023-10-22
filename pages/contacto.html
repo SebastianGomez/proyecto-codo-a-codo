@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fc31967e20.js" crossorigin="anonymous"></script>
+    <script src="../js/validacion.js"></script>
     <link rel="stylesheet" href="../assets/style.css">
     <title>Contacto</title>
 </head>
@@ -24,21 +25,21 @@
     <main>
         <div id="contacto">
             <h2>Contactanos</h2>
-            <form method="POST" action="#" class="form">
+            <form method="POST" action="#" class="form" id="form">
                 <div class="row">
                     <label for="name">Nombre</label>
-                    <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required>
+                    <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" > <!--required-->
                    
                 </div>
     
                 <div class="row">
                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Ingresa tu email" required>
+                    <input type="email" name="email" id="email" placeholder="Ingresa tu email" > 
                 </div>
     
                 <div class="row">
                         <label for="message">Deja tu comentario</label>
-                        <textarea name="message" placeholder="Ingresa tu mensaje"></textarea>
+                        <textarea name="message" id="message"   placeholder="Ingresa tu mensaje"></textarea>
                 </div>
                 <div class="row">
                     <label for="news">Deseas recibir noticias?</label>
@@ -46,9 +47,9 @@
                     <input type="checkbox" name="news" id="news" checked>
                 </div>
                
-                     <label></label>
-                     <input type="submit" class="button" value="Enviar">
-               
+                <button type="submit">Enviar</button>
+                <p class="warnings" id = "warnings"></p>
+
     
             </form>
         </div><!--fin#contacto-->
@@ -61,5 +62,6 @@
         <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
         <p>Todos los derechos reservados- Mundo Imprimibles</p>
     </footer>
+    
 </body>
 </html>
