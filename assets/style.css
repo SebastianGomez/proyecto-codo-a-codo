@@ -101,6 +101,11 @@ main a{
 .btn a:hover{
     background-color: rgb(139, 0, 72);
 }
+#price{
+    font-size: 2em;
+    color: rgb(139, 0, 72);
+    font-weight: 300;
+}
 h1, h2{
     text-align: center;
 }
