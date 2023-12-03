@@ -111,10 +111,12 @@ h1, h2{
 }
 h1{
     margin-top: 1%;
+    margin-bottom: 3%;
     font-size: 300%;
     letter-spacing: 4px;
 }
 h2{
+    margin: 1.5em 0;
     font-size: 200%;
     word-spacing: 2px;
     letter-spacing: 2px;
@@ -157,7 +159,6 @@ footer p{
     width: 60%;
     margin: 0 auto;
     padding: 1%;
-    background-color:azure;
     color: #333333;
     font-weight: 300;
 }
@@ -226,28 +227,31 @@ h1{
         padding:0;
     }
     .fluid-container{
-        width: 100%;
+        width: 90%;
         padding: 0;
+        
     }
-        .producto, .fichas{
+    .producto, .fichas{
          width: 50%;
-         padding: 0.4em;
-         margin: 0.2em;
+         margin:3px;
+         
      }
-     .producto img{
+    .producto img{
         width: 100%;
         height: 30vh;
      }
     }
-@media (max-width:600px) {
+@media (max-width:840px) {
     body {
       font-size: 1em;
         }
-        main{
-            width: 100%;
-            padding: 0;
+     main{
+        width: 100%;
+        padding: 0;
         }
      .fluid-container{
+          width: 90%;
+          margin: 0 auto;
           flex-direction: column;
           padding: 0;
         }
