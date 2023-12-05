@@ -31,6 +31,7 @@ header nav li a{
 }
 header nav li a:hover{
     border-bottom: 2px solid white;
+    color:beige;
 }
 .logo{
     width: 100px;
@@ -204,7 +205,32 @@ h1{
   animation-iteration-count: 2;
   animation-direction: alternate-reverse;  
 }
-
+.table-productos{
+    border-collapse: collapse;
+    width: 100%;
+}
+.table-productos th{
+    background-color: rgb(139, 0, 72);
+    color:white;
+}
+.table-productos th,.table-productos td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.btn-primary{
+    background-color: rgb(139, 0, 72);
+    color:white;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border-radius:20px;
+}
+.btn-danger{
+    background-color:black;
+    color:white;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border-radius:20px;
+}
 .warnings {
     width: 200px;
     text-align: center;

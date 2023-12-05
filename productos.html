@@ -5,15 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fc31967e20.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
 integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-crossorigin="anonymous">
+crossorigin="anonymous">-->
     <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="img/logo.png"logo Mundo Imprimibles">
+            <img src="img/logo.png" alt="logo Mundo Imprimibles">
         </div>
         <nav>
             <ul>
@@ -29,7 +29,7 @@ crossorigin="anonymous">
         <div id="app" class="container">
             <h1>Productos</h1>
             <br>
-            <a class="btn btn-primary" href="producto_nuevo.html">Nuevo</a>
+            <a class="btn-primary" href="producto_nuevo.html">Nuevo</a>
             <br><br>
 
             <div v-if="error">
@@ -42,29 +42,29 @@ crossorigin="anonymous">
                 </section>
                 <section v-else>
                     <div class="table-responsive">
-                        <table class="table table-bordered">
+                        <table class="table-productos">
                             <thead>
                                 <tr>
                                     <th scope="col">Id</th>
                                     <th scope="col">Nombre</th>
-                                    <th scope="col">Precio</th>
-                                    <th scope="col">descripcion</th>
                                     <th scope="col">Imagen</th>
+                                    <th scope="col">Descripción</th>
+                                    <th scope="col">Precio</th>                                    
                                     <th scope="col">Acciones</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="" v-for="producto in productos">
                                     <td scope="row">{{producto.id}}</td>
-                                    <td>{{producto.nombre}}</td>
-                                    <td>{{producto.precio}}</td>
-                                    <td>{{producto.descripcion}}</td>
+                                    <td>{{producto.nombre}}</td>                                    
                                     <td>
                                         <img width="150" :src="producto.foto" :alt="producto.nombre">
                                     </td>
+                                    <td>{{producto.precio}}</td>
+                                    <td>{{producto.descripcion}}</td>
                                     <td>
-                                    <a class="btn btn-primary" :href="'producto_update.html?id='+ producto.id" >Editar</a>
-                                    <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
+                                    <a class="btn-primary" :href="'producto_update.html?id='+ producto.id" >Editar</a>
+                                    <button type="button" class="btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
                                     </td>
                                 </tr>
                             </tbody>
