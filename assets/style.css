@@ -223,6 +223,7 @@ h1{
     font-size: 1em;
     padding: 0.5em 1em;
     border-radius:20px;
+    margin:10px;
 }
 .btn-danger{
     background-color:black;
@@ -230,6 +231,7 @@ h1{
     font-size: 1em;
     padding: 0.5em 1em;
     border-radius:20px;
+    margin:10px;
 }
 .warnings {
     width: 200px;
