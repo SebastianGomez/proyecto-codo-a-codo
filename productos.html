@@ -66,6 +66,7 @@ crossorigin="anonymous">-->
                                     <td>{{producto.descripcion}}</td>
                                     <td>
                                     <a class="btn-primary" :href="'producto_update.html?id='+ producto.id" >Editar</a>
+                                    <br>
                                     <button type="button" class="btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
                                     </td>
                                 </tr>
