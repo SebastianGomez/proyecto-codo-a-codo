@@ -28,6 +28,7 @@ const { createApp } = Vue
             })
         },
         eliminar(producto) {
+            alert("Esta seguro de eliminar este producto?")
             const url = this.url+'/' + producto;
             var options = {
                 method: 'DELETE',
@@ -35,6 +36,7 @@ const { createApp } = Vue
             fetch(url, options)
                 .then(res => res.json()) 
                 .then(res => {
+                    alert("Registro eliminado")
                     location.reload();
                 })
         },
